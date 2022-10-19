@@ -1,32 +1,49 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Aufgabe_1.Aufgabe1();
 
-int x = 9, z = 6; double y = 8;
-Console.WriteLine(x-- == y);
-Console.WriteLine(x == (int)y);
-Console.WriteLine("{0:F1}", 0.123);
-Console.WriteLine(z / y);
-Console.WriteLine(x -= 10);
-Console.WriteLine(x-- == y & true);
-Console.WriteLine(!(z == 6) | false);
-Console.WriteLine((x *= -2) == z);
-Console.WriteLine("Hello, World!");
-
-int auswahl;
-
-Console.WriteLine("(1) Umrechnung con celsius nach kelvin");
-Console.WriteLine("(2) Umrechnung von Celsius nach Fahrenheit");
-Console.WriteLine("(3) Umrechnung von Kelvin nach Celsius");
-Console.WriteLine("(4) Umrechnung von Kelvin nach Fahrenheit");
-
-auswahl = Convert.ToInt16(Console.ReadLine());
-switch (auswahl)
+public static class Aufgabe_1
 {
-    case 1: Console.Write("Gib die zahl in Celsius an:"); double celsius = Convert.ToDouble(Console.ReadLine()); double kelvin = (celsius + 273.15); Console.WriteLine("{0} C° sind {1} Klevin", celsius, kelvin); break;
 
-    case 2: Console.Write("Gib die Zahl in Celsius an:"); double celsius1 = Convert.ToDouble(Console.ReadLine()); double fahrenheit = ((celsius1 * 9 / 5) + 32); Console.WriteLine("{0} C° sind {1}° Fahrenheit", celsius1, fahrenheit); break;
-    case 3: Console.Write("Gib die Zahl in Kelvin an:"); double klevin1 = Convert.ToDouble(Console.ReadLine()); double celsius2 = (klevin1 - 273.15); Console.WriteLine("{0} Klevin sind {1} C°", klevin1, celsius2); break;
-    case 4: Console.Write("Gib die Zahl in Celsius an:"); double kelvin2 = Convert.ToDouble(Console.ReadLine()); double fahrenheit1 = ((kelvin2 - 273.15) * 9 / 5 + 32); Console.WriteLine("{0} kelvin sind {1}° Fahrenheit", kelvin2, fahrenheit1); break;
-    default: Console.WriteLine("Da ist etwas schief gelaufen:/"); break;
-}
+    Console.WriteLine("Persönliche Daten");
+        
+        Console.Write("Geben sie ihren Vornamen ein");
+        Console.ReadLine
+        string "Vorname";
+        
+        Console.Write("Geben sie ihren Nachnamen ein");
+        Console.ReadLine
+        string "Nachname";
+
+        Console.Write("Geben sie ihren Alter ein");
+        Console.ReadLine
+        short "alter";
+
+        Console.Write("Geben sie ihre groesse ein");
+        Console.ReadLine
+        double "groesse";
+
+        Console.Write("Geben sie ihren erste_ps ein");
+        Console.ReadLine
+        bool "erste_ps";
+
+
+        Console.WriteLine("true","false");
+
+        Console.WriteLine("-------------------------");
+
+    public static (string, string, short, double, bool) Aufgabe1()
+    {
+
+
+        string vorname;
+        string nachname;
+        short alter;
+        double groesse;
+        bool erste_ps;
+
+
+        return (vorname, nachname, alter, groesse, erste_ps);
+
+
+
+    }
 
